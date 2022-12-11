@@ -18,7 +18,7 @@ public class Shop {
             new Toy("Car", 1_000, 3),
             new Toy("Barby", 1_300, 5),
             new Food("Cheese", 400, new GregorianCalendar(2023, Calendar.JANUARY, 12)),
-            new Food("Sausage", 600, new GregorianCalendar(2023, Calendar.JANUARY, 02)),
+            new Food("Sausage", 600, new GregorianCalendar(2023, Calendar.JANUARY, 2)),
             new Food("Fish", 500, new GregorianCalendar(2022, Calendar.DECEMBER, 25))
     };
 
