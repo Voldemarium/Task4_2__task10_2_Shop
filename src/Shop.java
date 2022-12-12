@@ -19,7 +19,8 @@ public class Shop {
             new Toy("Barby", 1_300, 5),
             new Food("Cheese", 400, new GregorianCalendar(2023, Calendar.JANUARY, 12)),
             new Food("Sausage", 600, new GregorianCalendar(2023, Calendar.JANUARY, 2)),
-            new Food("Fish", 500, new GregorianCalendar(2022, Calendar.DECEMBER, 25))
+            new Food("Fish", 500, new GregorianCalendar(2022, Calendar.DECEMBER, 25)),
+            new Food("Milk", 50, 2023, 1, 5)
     };
 
     public Product[] getProducts(int cost) {
