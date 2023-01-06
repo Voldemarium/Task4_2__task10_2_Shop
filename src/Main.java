@@ -8,7 +8,7 @@ import java.util.GregorianCalendar;
 
 public class Main {
     public static void main(String[] args) {
-        Shop shop = new Shop(10);
+        Shop shop = new Shop();
         shop.addProduct(new Phone("Nokia-g10", 10_000, "Nokia"))
                 .addProduct(new Phone("Nokia-g11", 10_000, "Nokia"))
                 .addProduct(new Phone("Samsung-s20", 20_000, "Samsung"))
@@ -31,8 +31,10 @@ public class Main {
 
         System.out.println(Arrays.toString(shop.findPhones("Samsung")));
         System.out.println(Arrays.toString(shop.findToys(4)));
+        System.out.println(Arrays.toString(shop.findToys("4")));
         System.out.println(Arrays.toString(shop.findFood(
                 new GregorianCalendar(2022, Calendar.DECEMBER, 31).getTime()))
         );
+        System.out.println(Arrays.toString(shop.findFood("2022.12.31")));
     }
 }
