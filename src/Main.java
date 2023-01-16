@@ -36,5 +36,6 @@ public class Main {
                 new GregorianCalendar(2022, Calendar.DECEMBER, 31).getTime()))
         );
         System.out.println(Arrays.toString(shop.findFood("2022.12.31")));
+        System.out.println(Arrays.toString(shop.findFood("Sat Dec 31 00:00:00 GMT+04:00 2022")));
     }
 }
