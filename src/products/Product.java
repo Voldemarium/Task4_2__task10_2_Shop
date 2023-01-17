@@ -24,4 +24,17 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return this.price == product.price && this.name.equals(product.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return name.hashCode() + price;
+    }
 }
